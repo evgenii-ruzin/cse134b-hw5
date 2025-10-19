@@ -1,0 +1,16 @@
+header, #warning, main, footer {
+    border: 2px solid black;
+}
+
+img {
+    border: 1px solid black;
+}
+
+skill-item {
+    display: inline-block;
+    background-color: #757575;
+    color: white;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 3px;
+}

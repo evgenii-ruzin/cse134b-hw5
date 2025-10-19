@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/icon.svg">
+    <script src="script.js"></script>
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <noscript>You need to enable JavaScript to us this site.</noscript>
+
+    <hello-world></hello-world>
+
+    <script>
+        class HelloWorld extends HTMLElement {
+            connectedCallback() {
+                console.log("Hello world!");
+            }
+        }
+
+        customElements.define('hello-world', HelloWorld);
+    </script>
+
+    <header>
+        <!-- going to be horizontal when CSS applied-->
+        <p id="hdr-name"><b>Evgenii Ruzin</b></p>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="my-skills.html">My Skills</a></li>
+                <li><a href="my-experience.html">My Experience</a></li>
+            </ul>
+        </nav>
+        <button id="CV-btn">Download CV</button>
+        <button id="email-btn">Email</button>
+        <button id="github-btn">GitHub</button>
+    </header>
+
+    <main>
+        <section id="warning">
+            <h2>Warning!</h2>
+            <p><i>This page is still under construction!</i></p>
+            <p><label for="progress">Current progress:</label>
+            <progress id="progress" value="25" max="100"></progress>
+            </p>
+        </section>
+
+        <br>
+
+        <!-- dialog window will appear only after certain conditions, here used as an example -->
+        <dialog open id="survey">
+            <button id="close-btn">Close</button>
+            <form id="survey-form">
+                <fieldset>
+                    <legend>Rate my portfolio</legend>
+                    <label for="rating">Rating:</label>
+                    <select name="rating" id="rating">
+                        <option value="" disabled selected>1-5</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <br>
+                    <label for="liked">What you liked?</label><br>
+                    <input type="text" id="liked" name="liked" placeholder="I liked...">
+                    <br>
+                    <label for="dliked">What you didn't like?</label><br>
+                    <input type="text" id="dliked" name="dliked" placeholder="I didn't like...">
+                    <br>
+                    <label for="comments">Comments:</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="30"></textarea>
+                </fieldset>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+
+        </dialog>
+
+        <article id="info">
+            <h1>About Me</h1>
+            <picture>
+                <source media="(min-width: 1000px)" srcset=""/>
+                <img src="" alt="me">
+            </picture>
+            <div id="about-me-contents">
+                <section id="background">
+                    <h2>My background</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.</p>
+                </section>
+
+                <br>
+
+                <section id="bio">
+                    <h2>My origin</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.</p>
+                </section>
+
+                <br>
+
+                <section id="personal">
+                    <h2>My interests</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.</p>
+                </section>
+            </div>
+
+
+        </article>
+
+    </main>
+
+    <footer>
+        <p>&copy; Made by <strong>Evgenii Ruzin&trade;</strong> in 2025</p>
+        <svg id="personal-logo"></svg>
+    </footer>
+</body>
+</html>
