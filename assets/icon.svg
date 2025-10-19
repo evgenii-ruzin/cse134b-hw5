@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Head -->
+  <circle cx="50" cy="25" r="18" fill="white"/>
+  
+  <!-- Neck -->
+  <rect x="45" y="40" width="10" height="8" fill="white"/>
+  
+  <!-- Shoulders and torso -->
+  <path d="M 20 50 Q 25 48, 35 48 L 45 48 L 45 85 Q 45 90, 50 90 Q 55 90, 55 85 L 55 48 L 65 48 Q 75 48, 80 50 L 85 65 Q 83 70, 78 72 L 75 75 L 75 90 Q 75 95, 70 95 L 30 95 Q 25 95, 25 90 L 25 75 L 22 72 Q 17 70, 15 65 Z" fill="white"/>
+</svg>
