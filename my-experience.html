@@ -13,7 +13,6 @@
         <nav id="nav">
             <ul>
                 <li><a href="index.html">About Me</a></li>
-                <li><a href="my-skills.html">My Skills</a></li>
                 <li><a href="my-experience.html">My Experience</a></li>
             </ul>
         </nav>
@@ -23,43 +22,51 @@
     </header>
 
     <main>
-        <ol>
-            <li>
-                <details id="project-1">
-                    <summary>Project Name <skill-item>HTML</skill-item><skill-item>CSS</skill-item><skill-item>JS</skill-item></summary>
-                    <iframe
-                            id="prj-1-ifr"
-                            title="Project 1 Demo"
-                            width="250"
-                            height="250"
-                            src="https://blank.page/">
-                    </iframe>
-                    <p>iframe to the project page, acts like a demo of project (above is not my project, just an example)</p>
-                    <p>style used here <em>only to emphasise span elements</em></p>
-                    <p>Project description where I explain my <span id="span-role" style="color: red">roles</span>,
-                        <span id="span-skill" style="color: blue">skills used</span> and <span id="span-cont" style="color: green">contributions</span></p>
-                </details>
-            </li>
+        <section id="skills">
+            <h2>Skills</h2>
+            <p>
+                Languages: C/C++, HTML/CSS, JS, Python<br>
+                Tools: Git, Github, VSCode, JetBrains IDEs, Figma<br>
+                Frameworks: React<br>
+                Database: PostgreSQL, MongoDB
+            </p>
+        </section>
 
-            <li>
-                <details id="project-2">
-                    <summary>Project Name {short summary}</summary>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.</p>
-                </details>
-            </li>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ol>
+                <li>
+                    <details id="project-1">
+                        <summary><a href="https://v3yu.github.io/Card-Game-Project/src/title/index.html>"><i>Slay the Spire</i>-like game</a> <skill-item>HTML</skill-item><skill-item>JS</skill-item><skill-item>CI/CD</skill-item></summary>
+                        <label for="project1-summary">Project for a software engineering class. Brief summary:</label>
+                        <ul id="project1-summary">
+                            <li>Project is a small card game</li>
+                            <li>Worked in a team of 10 people</li>
+                            <li>Was part of a backend team, responsible for game logic and game functionality</li>
+                            <li>Gained experience of building CI/CD pipeline and unit testing</li>
+                            <li>Fixed a critical bug of screen flickering during the game</li>
+                        </ul>
 
-            <li>
-                <details id="project-3">
-                    <summary>Project Name {short summary}</summary>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.</p>
-                </details>
-            </li>
-        </ol>
+                    </details>
+                </li>
+
+                <li>
+                    <details id="project-2">
+                        <summary>Accounting app (WIP) <skill-item>React</skill-item><skill-item>HTML</skill-item><skill-item>CSS</skill-item><skill-item>JS</skill-item><skill-item>MongoDB</skill-item></summary>
+                        <label for="project2-summary">Brief summary:</label>
+                        <ul id="project2-summary">
+                            <li>App that helps tracking finances and making accounting reports</li>
+                            <li>Inspired by an accounting course I took</li>
+                        </ul>
+                    </details>
+                </li>
+            </ol>
+        </section>
+
     </main>
 
     <footer>
         <p>&copy; Made by <strong>Evgenii Ruzin&trade;</strong> in 2025</p>
-        <svg id="personal-logo"></svg>
     </footer>
 
 </body>

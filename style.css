@@ -1,3 +1,7 @@
+html {
+    font-family: sans-serif;
+}
+
 header, #warning, main, footer {
     border: 2px solid black;
 }
