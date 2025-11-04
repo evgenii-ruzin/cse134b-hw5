@@ -2,24 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="icon" type="image/svg+xml" href="assets/icon.svg">
     <script src="script.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+    </style>
 </head>
 <body>
     <header>
-        <!-- going to be horizontal when CSS applied-->
-        <p id="hdr-name"><b>Evgenii Ruzin</b></p>
-        <nav id="nav">
-            <ul>
-                <li><a href="index.html">About Me</a></li>
-                <li><a href="my-experience.html">My Experience</a></li>
-            </ul>
-        </nav>
-        <button id="CV-btn">Download CV</button>
-        <button id="email-btn">Email</button>
-        <button id="github-btn">GitHub</button>
+        <section id="hdr-name">
+            <p><b>Evgenii Ruzin</b></p>
+        </section>
+        <section id="hdr-nav">
+            <nav>
+                <a id="curr-page" href="index.html">About Me</a>
+                <a href="my-experience.html">My Experience</a>
+            </nav>
+        </section>
+        <section id="hdr-links">
+            <a href="https://github.com/evgenii-ruzin"><img src="assets/github-142-svgrepo-com.svg" alt="gh-logo" width="30" height="30"></a>
+            <a href="https://leetcode.com/u/user1635kS/"><img src="assets/leetcode-svgrepo-com.svg" alt="leetcode-icon" width="30" height="30"></a>
+            <a href="mailto:rouzin.evgeny@gmail.com"><img src="assets/email-svgrepo-com.svg"  alt="email-icon" width="30" height="30"></a>
+            <template id="cv-dwld-template"><a href=""><img src="assets/cv-file-interface-symbol-svgrepo-com.svg" alt="cv-icon" width="30" height="30"></a></template>
+
+        </section>
     </header>
 
     <main>
@@ -56,57 +66,57 @@
         </template>
 
         <article id="info">
-            <h1>About me</h1>
-            <picture>
-                <source media="(min-width: 1000px)" srcset="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcreazilla-store.fra1.digitaloceanspaces.com%2Femojis%2F58614%2Fman-emoji-clipart-md.png&f=1&nofb=1&ipt=31e3ad9041409535362eac360e662ac7125405f5747793399d78368787f7675e" width="200" height="200">
-                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpng.pngtree.com%2Fpng-clipart%2F20220927%2Foriginal%2Fpngtree-smiley-face-emoji-png-image_8634432.png&f=1&nofb=1&ipt=ec551f15e182972271a8f55c8c96a1164af05f5920502c0ad29d814392c2fc8b" alt="me" width="100" height="100">
-            </picture>
-            <div id="about-me-contents">
-                <section id="background">
-                    <h2>My background</h2>
-                    <article class="education">
-                        <h3>BS CS @ UCSD</h3>
-                        <p>September 2024 - June 2026<br>
+            <section id="picture">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="assets/photo-phone.png" type="image/png" width="200" height="200">
+                    <img src="assets/photo-desktop.png" alt="photo of me" loading="lazy" width="400" height="400">
+                </picture>
+            </section>
+            <section id="background">
+                <h2>My background</h2>
+                <article class="education">
+                    <h3>BS CS @ UCSD</h3>
+                    <p>September 2024 - June 2026<br>
                         GPA: 3.35<br>
                         Relevant coursework: Advanced Algorithms & Datastructures, Operating Systems, Software Engineering/Web Client Languages,
-                             Theory of Computation, AI: Search and Reasoning</p>
-                    </article>
-                    <br>
-                    <article class="education">
-                        <h3>AS CS @ DVC</h3>
-                        <p>January 2022 - May 2024<br>
-                            GPA: 3.86<br>
-                            Relevant coursework: Calculus, OOP, Linear Algebra, Discrete Mathematics</p>
-                    </article>
-                </section>
+                        Theory of Computation, AI: Search and Reasoning</p>
+                </article>
+                <article class="education">
+                    <h3>AS CS @ DVC</h3>
+                    <p>January 2022 - May 2024<br>
+                        GPA: 3.86<br>
+                        Relevant coursework: Calculus, OOP, Linear Algebra, Discrete Mathematics</p>
+                </article>
+            </section>
 
-                <section id="personal-info">
-                    <h2>Personal Intro</h2>
-                    <p>My name is Evgenii, or just Gene. I'm an international student coming from Russia. Right now I'm
-                        a 4th year CS Major student at UCSD. I also plan to apply for a Masters in CS.</p>
-                    <p>I'm interested in programming and tech. I like to learn new
-                        stuff, create something of my own and potentially see it helping others. I want to pursue a career in Software
-                     Engineering.</p>
-                </section>
+            <section id="personal-info">
+                <h2>Personal Intro</h2>
+                <p>My name is Evgenii, or just Gene. I'm an international student coming from Russia. Right now I'm
+                    a 4th year CS Major student at UCSD. I also plan to apply for a Masters in CS.</p>
+                <p>I'm interested in programming and tech. I like to learn new
+                    stuff, create something of my own and potentially see it helping others. I want to pursue a career in Software
+                    Engineering.</p>
+            </section>
 
-                <section id="interests">
-                    <h2>My Interests</h2>
-                    <ul>
-                        <li>Watching soccer - favorite team is Arsenal</li>
-                        <li>Watching movies and TV series - favorites are <i>Once Upon a Time in Hollywood</i> and <i>The Dark</i></li>
-                        <li>Video games, especially Stardew Valley</li>
-                        <li>Favorite book - <i>Remembrance of Earth's Past</i> trilogy</li>
-                    </ul>
-                </section>
-            </div>
-
-
+            <section id="interests">
+                <h2>My Interests</h2>
+                <ul>
+                    <li>Watching soccer
+                        <ul>
+                            <li>favorite team is Arsenal</li>
+                        </ul>
+                    </li>
+                    <li>Watching movies and TV series
+                        <ul>
+                            <li>favorites are <i>Once Upon a Time in Hollywood</i> and <i>The Dark</i></li>
+                        </ul>
+                    </li>
+                    <li>Video games, especially Stardew Valley</li>
+                    <li>Favorite book - <i>Remembrance of Earth's Past</i> trilogy</li>
+                </ul>
+            </section>
         </article>
 
     </main>
-
-    <footer>
-        <p>&copy; Made by <strong>Evgenii Ruzin&trade;</strong> in 2025</p>
-    </footer>
 </body>
 </html>
