@@ -7,19 +7,28 @@
         body {
             width: 100vw;
             height: 100vh;
+            margin: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
 
-            form {
+            fieldset {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                border: 2px solid black;
 
                 * {
                     margin: 5px;
+                }
+
+                legend {
+                    font-size: 2rem;
+                    font-weight: bold;
+                    border: 2px solid black;
+                    margin: auto;
                 }
 
                 output {
@@ -44,23 +53,32 @@
                     color: red;
                 }
             }
+
+            form:valid:not(:focus) {
+                #form-valid {
+                    display: block;
+                    color: green;
+                }
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Contact Form</h1>
     <form action="https://httpbin.org/post" method="POST" id="form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Name" minlength="3" maxlength="25" pattern="^[A-Za-z]+( [A-Za-z]+)?" required>
-        <output form="form" id="name-error">Invalid name</output>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Email" required>
-        <output form="form" id="email-error">Invalid email</output>
-        <label for="comments">Comments:</label>
-        <textarea id="comments" name="comments" placeholder="Comments" rows="4" cols="20"></textarea>
-        <input type="hidden" name="possible_bot" value="true">
-        <input type="submit" value="Submit">
-        <output form="form" id="form-valid">Form ready to submit :)</output>
+        <fieldset>
+            <legend>Contact Form</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name" minlength="3" maxlength="25" pattern="^[A-Za-z]+( [A-Za-z]+)?" required>
+            <output form="form" id="name-error">Invalid name</output>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <output form="form" id="email-error">Invalid email</output>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" placeholder="Comments" rows="4" cols="20"></textarea>
+            <input type="hidden" name="possible_bot" value="true">
+            <input type="submit" value="Submit">
+            <output form="form" id="form-valid">Form ready to submit :)</output>
+        </fieldset>
     </form>
 </body>
 </html>
