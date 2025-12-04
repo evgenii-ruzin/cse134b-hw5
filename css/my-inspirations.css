@@ -3,7 +3,28 @@ main {
     padding: 0.5rem;
     background: linear-gradient(to left top, var(--theme-bg-color-1), var(--theme-bg-color-2));
     font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    button {
+        font-size: 2rem;
+        padding: var(--ic-padding);
+        margin: var(--ic-margin);
+        border: var(--ic-border);
+        border-radius: var(--ic-border-radius);
+        background: var(--tile-background, white);
+        backdrop-filter: blur(10px);
+        box-shadow: var(--tile-shadow, none);
+    }
+
+    button:hover {
+        cursor: pointer;
+        background: yellow;
+    }
+}
+
+article {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem 1rem;
