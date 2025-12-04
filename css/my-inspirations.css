@@ -1,0 +1,16 @@
+main {
+    flex: 1 0 auto;
+    padding: 0.5rem;
+    background: linear-gradient(to left top, var(--theme-bg-color-1), var(--theme-bg-color-2));
+    font-size: 1.25rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 1rem;
+    align-items: center;
+    justify-items: center;
+
+    h2 {
+        text-align: center;
+    }
+}

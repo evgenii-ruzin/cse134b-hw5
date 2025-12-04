@@ -1,0 +1,18 @@
+:root {
+    /*theme variables*/
+    --tile-background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    --tile-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    --theme-bg-color-1: #ff4a73;
+    --theme-bg-color-2: #ffa94b;
+
+    /*inspiration-card variables*/
+    --ic-height: fit-content;
+    --ic-width: 75%;
+    --ic-padding: 1.25rem 2rem;
+    --ic-margin: 1rem 0;
+    --ic-border: 1px solid black;
+    --ic-border-radius: 15px;
+
+    --ic-img-width: 300px;
+    --ic-img-height: 300px;
+}

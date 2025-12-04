@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Inspirations</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/my-inspirations.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <script src="js/script.js"></script>
+    <script src="js/inspiration-card.js"></script>
+</head>
+<body>
+<header>
+    <section id="theme" style="display: none;">
+
+    </section>
+    <section id="hdr-name">
+        <p><b>Evgenii Ruzin</b></p>
+    </section>
+    <section id="hdr-nav">
+        <nav>
+            <a href="index.html">About Me</a>
+            <a href="my-experience.html">My Experience</a>
+            <a id="curr-page" href="my-inspirations.html">My Inspirations</a>
+        </nav>
+    </section>
+    <section id="hdr-links">
+        <a href="https://github.com/evgenii-ruzin"><div class="header-icon github-icon"></div></a>
+        <a href="https://leetcode.com/u/user1635kS/"><div class="header-icon leetcode-icon"></div></a>
+        <a href="mailto:rouzin.evgeny@gmail.com"><div class="header-icon email-icon"></div></a>
+    </section>
+</header>
+<main>
+    <template>
+        <inspiration-card name="Remembrance of Earth's Past" year="2006, 2008, 2010" type="Book series" img="https://upload.wikimedia.org/wikipedia/en/4/43/Remembrance_of_Earth%27s_Past_trilogy_book_covers.png" alt="Covers of 3 books of the series" description="The best piece of sci-fi I have ever touched. All three books are great, with each next being better than the previous. While characters and dialogues lack depth, the concepts and ideas these books cover are mind blowing. No other book was that inventive in its sci-fi parts as these three. Must-read for any science fiction fan." learn-more="https://en.wikipedia.org/wiki/Remembrance_of_Earth's_Past"></inspiration-card>
+        <inspiration-card name="Dark" year="2017-2020" type="TV Series" img="https://i.ebayimg.com/images/g/MDUAAOSwmNNidO1b/s-l1200.jpg" alt="Poster of the series 'Dark'. Text on the poster says: 'The Question is not where. But when'. Poster depicts a figure in yellow jacket looking at the cave entrance." description="I really like this series for its exploration of the time travelling. It is very deep in its concept of fate, consequences, and affection the past can have on the future. It also has a great ending (Interstellar fans would like it)" learn-more="https://www.imdb.com/title/tt5753856/"></inspiration-card>
+        <inspiration-card name="Once Upon a Time... in Hollywood" year="2019" type="Movie" img="https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Once_Upon_a_Time_in_Hollywood_poster.png/250px-Once_Upon_a_Time_in_Hollywood_poster.png" alt="Poster of the movie. Poster contains images of all the main character with a movie title in the middle." description="I absolutely love the vibe of this movie. It's more of a day-in-life rather than a complete story with a deep plot. Characters just mind their business and do their things, and you just watch at that. However, the way it is filmed and shown is stunning and makes you fall in love with the whole era (60s). But this calmness pays off with a great ending, both funny and sentimental. My favorite movie OAT" learn-more="https://www.imdb.com/title/tt7131622/"></inspiration-card>
+
+        <inspiration-card></inspiration-card>
+    </template>
+</main>
+</body>
+</html>
