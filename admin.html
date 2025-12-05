@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <script src="js/script.js"></script>
+    <script src="js/admin.js"></script>
+</head>
+<body>
+<header>
+    <section id="theme" style="display: none;">
+
+    </section>
+    <section id="hdr-name">
+        <p><b>Evgenii Ruzin</b></p>
+    </section>
+    <section id="hdr-nav">
+        <nav>
+            <a href="index.html">About Me</a>
+            <a href="my-experience.html">My Experience</a>
+            <a href="my-inspirations.html">My Inspirations</a>
+        </nav>
+    </section>
+    <section id="hdr-links">
+        <a href="https://github.com/evgenii-ruzin"><div class="header-icon github-icon"></div></a>
+        <a href="https://leetcode.com/u/user1635kS/"><div class="header-icon leetcode-icon"></div></a>
+        <a href="mailto:rouzin.evgeny@gmail.com"><div class="header-icon email-icon"></div></a>
+    </section>
+</header>
+<main>
+    <form id="crud-form" action="" method="post">
+        <fieldset id="main-fieldset">
+            <legend id="form-title">Manage the database</legend>
+                <fieldset>
+                    <legend>Local or remote?</legend>
+                    <label for="lor1">Local</label>
+                    <input id="lor1" name="lor" type="radio" value="local" checked>
+                    <label for="lor2">Remote</label>
+                    <input id="lor2" name="lor" type="radio" value="remote">
+                </fieldset>
+                <fieldset>
+                    <legend>CUD?</legend>
+                    <label for="cud1">Create</label>
+                    <input id="cud1" name="cud" type="radio" value="C" checked>
+                    <label for="cud2">Update</label>
+                    <input id="cud2" name="cud" type="radio" value="U">
+                    <label for="cud3">Delete</label>
+                    <input id="cud3" name="cud" type="radio" value="D">
+                </fieldset>
+                <fieldset id="create-form" style="display: grid;">
+                    <legend>New entry</legend>
+                    <label for="cName">Name: </label>
+                    <input id="cName" name="cName" type="text" required>
+                    <label for="cYear">Year: </label>
+                    <input id="cYear" name="cYear" type="text" required>
+                    <label for="cType">Type: </label>
+                    <input id="cType" name="cType" type="text" required>
+                    <label for="cImg">Image: </label>
+                    <input id="cImg" name="cImg" type="text" required>
+                    <label for="cAlt">Alt: </label>
+                    <input id="cAlt" name="cAlt" type="text" required>
+                    <label for="cDescription">Description: </label>
+                    <textarea id="cDescription" name="cDescription" rows="5" required></textarea>
+                    <label for="cUrl">Learn more: </label>
+                    <input id="cUrl" name="cUrl" type="text" required>
+                    <input id="create-submit" type="submit" value="Create">
+                </fieldset>
+                <fieldset id="update-form" style="display: none;" disabled>
+                    <legend>Update entry</legend>
+                    <label for="update-select">Entry to update: </label>
+                    <select id="update-select" name="update-select" required></select>
+                    <label for="uName">Name: </label>
+                    <input id="uName" name="uName" type="text" required>
+                    <label for="uYear">Year: </label>
+                    <input id="uYear" name="uYear" type="text" required>
+                    <label for="uType">Type: </label>
+                    <input id="uType" name="uType" type="text" required>
+                    <label for="uImg">Image: </label>
+                    <input id="uImg" name="uImg" type="text" required>
+                    <label for="uAlt">Alt: </label>
+                    <input id="uAlt" name="uAlt" type="text" required>
+                    <label for="uDescription">Description: </label>
+                    <textarea id="uDescription" name="uDescription" rows="5" required></textarea>
+                    <label for="uUrl">Learn more: </label>
+                    <input id="uUrl" name="uUrl" type="text" required>
+                    <input id="update-submit" type="submit" value="Update">
+                </fieldset>
+                <fieldset id="delete-form" style="display: none;" disabled>
+                    <legend>Delete entry</legend>
+                    <label for="delete-select">Entry to delete: </label>
+                    <select id="delete-select" name="delete-select" required></select>
+                    <label for="dName">Name: </label>
+                    <input id="dName" name="dName" type="text" disabled>
+                    <label for="dYear">Year: </label>
+                    <input id="dYear" name="dYear" type="text" disabled>
+                    <label for="dType">Type: </label>
+                    <input id="dType" name="dType" type="text" disabled>
+                    <label for="dImg">Image: </label>
+                    <input id="dImg" name="dImg" type="text" disabled>
+                    <label for="dAlt">Alt: </label>
+                    <input id="dAlt" name="dAlt" type="text" disabled>
+                    <label for="dDescription">Description: </label>
+                    <textarea id="dDescription" name="dDescription" rows="5" disabled></textarea>
+                    <label for="dUrl">Learn more: </label>
+                    <input id="dUrl" name="dUrl" type="text" disabled>
+                    <input id="delete-submit" type="submit" value="Delete">
+                </fieldset>
+        </fieldset>
+    </form>
+</main>
+</body>
+</html>
