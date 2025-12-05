@@ -70,6 +70,7 @@ function init() {
         del.style.display = 'none';
         update.removeAttribute('disabled');
         update.style.display = 'grid';
+        populate_lists();
       }
       else if (action === 'D') {
         populate_lists()
@@ -79,6 +80,7 @@ function init() {
         create.style.display = 'none';
         del.removeAttribute('disabled');
         del.style.display = 'grid';
+        populate_lists();
       }
     }
   });
@@ -224,8 +226,8 @@ function init() {
       req.onreadystatechange = () => {
         if (req.readyState == XMLHttpRequest.DONE) {
           if (req.status >= 200 && req.status < 300) {
-            data = JSON.parse(req.responseText);
-            console.log(data)
+            const response = JSON.parse(req.responseText);
+            console.log(response);
             alert(`Successfully ${a} entry to REMOTE storage`);
           } else {
             alert(`HTTP Error: ${req.status}: ${req.responseText}`);
@@ -244,6 +246,7 @@ function init() {
       alert(`Successfully ${a} entry to LOCAL storage`);
     }
 
+    way = 'L';
     form.reset();
 
     update.setAttribute('disabled', '');
@@ -253,6 +256,5 @@ function init() {
     create.removeAttribute('disabled');
     create.style.display = 'grid';
     data = JSON.parse(localStorage.getItem('data'));
-    populate_lists();
   }
 }
