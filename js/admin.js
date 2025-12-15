@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', init);
 function init() {
   const form = document.querySelector('#crud-form');
 
-  let data = JSON.parse(localStorage.getItem('data'));
+  let data = JSON.parse(localStorage.getItem('data')) || [];
   let way = 'L';
   let action = 'C';
 
@@ -24,7 +24,7 @@ function init() {
   populate_lists()
 
   local.addEventListener('change', (e) => {
-    data = JSON.parse(localStorage.getItem('data'));
+    data = JSON.parse(localStorage.getItem('data')) || [];
     way = 'L';
     console.log(data);
     populate_lists();
